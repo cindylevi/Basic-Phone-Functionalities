@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFCFC"
+    android:orientation="vertical"
+    tools:context="com.example.tpflashlight.fragments.FragmentLinterna">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FDFCFC"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnPanic"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/iBApagar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FDFCFC"
+            android:contentDescription="@string/un_bototn_de_apagado"
+            android:src="@mipmap/ic_verdebutton_background" />
+
+        <ImageView
+            android:id="@+id/iVFlashlight"
+            android:layout_width="0dp"
+            android:layout_height="109dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_noflashlight" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPanic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C51A1A"
+        android:backgroundTint="#F60000"
+        android:text="No hay un numero de telefono designado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
